@@ -1,4 +1,4 @@
-# 🎨 Edge Detection Viewer - Android + OpenCV + OpenGL + TypeScript
+#  Edge Detection Viewer - Android + OpenCV + OpenGL + TypeScript
 
 [![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com/)
 [![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)](https://opencv.org/)
@@ -7,25 +7,25 @@
 
 A comprehensive real-time edge detection application demonstrating the integration of Android, OpenCV (C++), OpenGL ES, and a TypeScript-based web viewer. This project processes camera frames in real-time, applies Canny edge detection using native code, and renders the output with hardware acceleration.
 
-## ✨ Features
+##  Features
 
 ### Android Application
-- ✅ **Real-time Camera Feed**: Utilizes `CameraX` for an efficient and modern camera API.
-- ✅ **Native C++ Processing**: High-performance frame processing with OpenCV via JNI.
-- ✅ **Edge Detection**: Implements Canny edge detection in native C++.
-- ✅ **OpenGL ES Rendering**: Smooth, hardware-accelerated rendering of camera frames.
-- ✅ **Dual-Mode View**: Toggle between the raw camera feed and the edge-detected output.
-- ✅ **Performance Metrics**: Displays a real-time FPS counter and processing time for performance monitoring.
-- ✅ **Material Design UI**: A clean and modern user interface.
+-  **Real-time Camera Feed**: Utilizes `CameraX` for an efficient and modern camera API.
+-  **Native C++ Processing**: High-performance frame processing with OpenCV via JNI.
+-  **Edge Detection**: Implements Canny edge detection in native C++.
+-  **OpenGL ES Rendering**: Smooth, hardware-accelerated rendering of camera frames.
+-  **Dual-Mode View**: Toggle between the raw camera feed and the edge-detected output.
+-  **Performance Metrics**: Displays a real-time FPS counter and processing time for performance monitoring.
+-  **Material Design UI**: A clean and modern user interface.
 
 ### Web Viewer
-- ✅ **TypeScript-Based**: A robust web interface for viewing and analyzing frames.
-- ✅ **HTML5 Canvas Rendering**: Displays processed frames in the browser.
-- ✅ **Statistics Dashboard**: Shows frame resolution, FPS, and processing time.
-- ✅ **Mock API**: Simulates a backend endpoint for receiving frame data from the Android app.
-- ✅ **Responsive Design**: A modern and responsive UI for different screen sizes.
+-  **TypeScript-Based**: A robust web interface for viewing and analyzing frames.
+-  **HTML5 Canvas Rendering**: Displays processed frames in the browser.
+-  **Statistics Dashboard**: Shows frame resolution, FPS, and processing time.
+-  **Mock API**: Simulates a backend endpoint for receiving frame data from the Android app.
+-  **Responsive Design**: A modern and responsive UI for different screen sizes.
 
-## 🏗️ Architecture
+##  Architecture
 
 The application is designed with a modular architecture that separates concerns between the UI, native processing, and rendering layers.
 
@@ -46,21 +46,22 @@ The data flows from the camera to the screen through the following steps:
 └───────────────────┘   └───────────────────┘   └─────────────────────┘   └───────────────────┘
 ```
 
-## 📸 Screenshots
-
-*(Add screenshots of the running Android and web applications here.)*
+##  Screenshots and Video Link.
 
 ### Android App
 | Raw View | Edge-Detected View |
 | :------: | :----------------: |
-|          |                    |
+| <img src="Rawimg.jpg" width="250">|<img src="SandeepFLAMimg.jpg" width="250">|
+
+## Video Link
+Click to have a walk through of the app-[[Drive Link]](https://drive.google.com/file/d/1JZ0L1cgh8ABUESPXGiccnFZMznuyIe-9/view?usp=sharing)
 
 ### Web Viewer
 | Dashboard |
 | :-------: |
 |           |
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 | Component | Technology |
 | :--- | :--- |
@@ -70,7 +71,7 @@ The data flows from the camera to the screen through the following steps:
 | **Graphics** | OpenGL ES 2.0, GLSL |
 | **Web** | TypeScript, HTML5 Canvas, CSS |
 
-## 🔧 Setup Instructions
+## Setup Instructions
 
 ### Prerequisites
 - **Android Studio**: Version 2023.1 (Hedgehog) or newer.
@@ -87,8 +88,8 @@ The OpenCV SDK is not included in this repository due to its size.
 
 ### Step 2: Clone the Repository
 ```bash
-git clone <your-repository-url>
-cd <repository-folder>
+git clone <repo link>
+cd <repo location>
 ```
 
 ### Step 3: Add OpenCV to the Project
