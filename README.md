@@ -57,8 +57,8 @@ The data flows from the camera to the screen through the following steps:
 Click to have a walk through of the app-[[Drive Link]](https://drive.google.com/file/d/1JZ0L1cgh8ABUESPXGiccnFZMznuyIe-9/view?usp=sharing)
 
 ### Web Viewer
-| Dashboard |
-| :-------: |
+| Dashboard 1 | Dashboard 2      |    Dashboard 3                 | 
+| :-------:   |  :-------:       |    :-------:                   |     
 |<img src="Web1.png" width="250">|<img src="Web2.png" width="250">|<img src="Web3.png" width="250">|
 
 ## Technology Stack
