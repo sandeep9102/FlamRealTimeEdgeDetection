@@ -59,7 +59,7 @@ Click to have a walk through of the app-[[Drive Link]](https://drive.google.com/
 ### Web Viewer
 | Dashboard |
 | :-------: |
-|<img src="Web1.png" width="250">| <img src="Web2.png" width="250">| <img src="Web3.png" width="250">|
+|<img src="Web1.png" width="250">|<img src="Web2.png" width="250">|<img src="Web3.png" width="250">|
 
 ## Technology Stack
 
