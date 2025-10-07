@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edge Detection Viewer - Web Interface</title>
+    <link rel="stylesheet" href="styles.css">
+    <script async src="https://docs.opencv.org/4.5.5/opencv.js" onload="onOpenCvReady();" type="text/javascript"></script>
+</head>
+<body>
+    <div id="loading" class="loading-overlay">
+        <div class="loading-spinner"></div>
+        <p>Loading OpenCV...</p>
+    </div>
+    <div class="container" style="display: none;">
+        <header>
+            <h1>🎨 Edge Detection Viewer</h1>
+            <p class="subtitle">Real-time OpenCV Processing Monitor</p>
+        </header>
+
+        <main>
+            <div class="viewer-section">
+                <div class="image-container">
+                    <canvas id="frameCanvas"></canvas>
+                    <div class="overlay-info">
+                        <span id="imageResolution">Resolution: N/A</span>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <button id="loadSampleBtn" class="btn btn-primary">
+                        📸 Load Sample Frame
+                    </button>
+                    <button id="toggleModeBtn" class="btn btn-secondary">
+                        🔄 Toggle Mode
+                    </button>
+                    <input type="file" id="fileInput" accept="image/*" style="display: none;">
+                    <button id="uploadBtn" class="btn btn-secondary">
+                        📁 Upload Image
+                    </button>
+                </div>
+            </div>
+
+            <div class="stats-section">
+                <h2>📊 Frame Statistics</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-label">FPS</div>
+                        <div class="stat-value" id="fpsValue">0.0</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Processing Time</div>
+                        <div class="stat-value" id="processingTime">0 ms</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Mode</div>
+                        <div class="stat-value" id="modeValue">Raw Feed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Frame Count</div>
+                        <div class="stat-value" id="frameCount">0</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h2>ℹ️ About</h2>
+                <p>
+                    This web viewer demonstrates the integration between native Android processing
+                    and web-based visualization. It can display processed frames from the Android app
+                    or load sample images for testing.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-badge">TypeScript</span>
+                    <span class="tech-badge">HTML5 Canvas</span>
+                    <span class="tech-badge">Modern CSS</span>
+                    <span class="tech-badge">ES2020</span>
+                </div>
+            </div>
+
+            <div class="api-section">
+                <h2>🔌 API Endpoint (Mock)</h2>
+                <div class="endpoint-info">
+                    <code>POST /api/frame</code>
+                    <p>Accepts base64-encoded image data from Android app</p>
+                </div>
+                <div class="endpoint-status">
+                    <span class="status-indicator" id="apiStatus"></span>
+                    <span id="apiStatusText">Ready to receive frames</span>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Edge Detection Viewer - Android + OpenCV + OpenGL + TypeScript Assessment</p>
+            <p class="version">Version 1.0.0 | Built with ❤️</p>
+        </footer>
+    </div>
+
+    <script>
+        function onOpenCvReady() {
+            console.log('OpenCV.js is ready');
+            document.getElementById('loading').style.display = 'none';
+            document.querySelector('.container').style.display = 'block';
+            // Load the main app after OpenCV is ready
+            const script = document.createElement('script');
+            script.type = 'module';
+            script.src = 'dist/index.js';
+            document.body.appendChild(script);
+        }
+    </script>
+</body>
+</html>
